@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "overTitle": {
+      "type": "string",
+      "default": "Chi sono"
+    },
+    "introTitle": {
+      "type": "string",
+      "default": "Sono una graphic designer",
+      "maxLength": 40,
+      "required": true
+    },
+    "shortIntro": {
+      "type": "text",
+      "maxLength": 200,
+      "required": true
+    },
+    "ctaLabel": {
+      "type": "string",
+      "default": "Scopri di più",
+      "required": true
+    },
+    "bioTitle": {
+      "type": "string",
+      "required": true
+    },
+    "fullBio": {
+      "type": "text",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
